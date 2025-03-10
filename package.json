@@ -1,0 +1,20 @@
+{
+  "name": "js-mutation-testing",
+  "version": "1.0.0",
+  "description": "mutation testing using javascript and stryker package",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "test-with-coverage": "nyc --reporter=text mocha"
+  },
+  "author": "Shady Zahran",
+  "license": "MIT",
+  "dependencies": {
+    "chai": "^5.2.0",
+    "mocha": "^11.1.0",
+    "nyc": "^17.1.0"
+  },
+  "devDependencies": {
+    "@stryker-mutator/mocha-runner": "^8.7.1"
+  }
+}
