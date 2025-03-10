@@ -24,7 +24,7 @@ describe("After refactoring", function () {
 
     });
 
-    it("should not reduce battery of unknown OS devices", function () {
+    it("should throw an error when using unknown OS devices", function () {
         devices = [
             new device_sim.Device("iOS 17", 70),
             new device_sim.Device("Android 12", 78)

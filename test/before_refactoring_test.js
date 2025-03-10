@@ -2,7 +2,7 @@ const expect = require("chai").expect;
 const device_sim = require("../src/device_simulation.js");
 
 describe("Before refactoring", function () {
-    it("should reduce battery of Android device by after one usage", function () {
+    it("should reduce battery of Android device after one usage", function () {
         devices = [
             new device_sim.Device("Android", 70)
         ];
@@ -13,7 +13,7 @@ describe("Before refactoring", function () {
 
     });
 
-    it("should reduce battery of iOS device by after one usage", function () {
+    it("should reduce battery of iOS device after one usage", function () {
         devices = [
             new device_sim.Device("iOS", 78)
         ];
@@ -24,7 +24,7 @@ describe("Before refactoring", function () {
 
     });
 
-    it("should not reduce battery of unknown OS devices", function () {
+    it("should throw an error when using unknown OS devices", function () {
         devices = [
             new device_sim.Device("iOS 17", 70),
             new device_sim.Device("Android 12", 78)
